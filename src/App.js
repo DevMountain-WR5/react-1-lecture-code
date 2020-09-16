@@ -1,24 +1,18 @@
+//App.js is the most parent component, and everything that displays on the viewport displays through App(like ClassComponent and FunctionalComponent below)
 import React from 'react';
-import logo from './logo.svg';
+//import components that you are displaying
+import ClassComponent from './Components/ClassComponent';
+import FunctionalComponent from './Components/FunctionalComponent';
 import './App.css';
 
 function App() {
+  // JavaScript comment
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* JSX comment */}
+      {/* displaying components */}
+      <ClassComponent />
+      <FunctionalComponent />
     </div>
   );
 }
